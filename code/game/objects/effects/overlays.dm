@@ -1,6 +1,5 @@
 /obj/effect/overlay
 	name = "overlay"
-	unacidable = 1
 	var/i_attached//Added for possible image attachments to objects. For hallucinations and the like.
 
 /obj/effect/overlay/singularity_act()
@@ -40,6 +39,11 @@
 	icon = 'icons/misc/beach.dmi'
 	icon_state = "coconuts"
 
+/obj/effect/overlay/sparkles
+	name = "sparkles"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "shieldsparkles"
+
 /obj/effect/overlay/adminoverlay
 	name = "adminoverlay"
 	icon = 'icons/effects/effects.dmi'
@@ -53,7 +57,7 @@
 	anchored = 1
 	density = 1
 	layer = 5
-	mouse_opacity = 0
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /obj/effect/overlay/wall_rot/New()
 	..()
